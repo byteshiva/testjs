@@ -1,4 +1,4 @@
-Maybe = function (value) {
+var Maybe = function (value) {
     var Nothing = {
         bind: function () {
           return this;
