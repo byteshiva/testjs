@@ -1,6 +1,6 @@
 Maybe = function (value) {
     var Nothing = {
-        bind: function (fn) {
+        bind: function () {
           return this;
         },
       };
