@@ -69,6 +69,7 @@ CI)
 
   else
     strongEcho 'Build, no analysis, no deploy'
+    echo $TRAVIS_PULL_REQUEST
 
     # No need for Maven phase "install" as the generated JAR file does not need to be installed
     # in Maven local repository. Phase "verify" is enough.
