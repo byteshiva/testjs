@@ -51,7 +51,8 @@ CI)
 
 
 
-  elif [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ -n "${GITHUB_TOKEN:-}" ]; then
+  #elif [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ -n "${GITHUB_TOKEN:-}" ]; then
+  elif [ -n "${GITHUB_TOKEN:-}" ]; then
     strongEcho 'Build and analyze pull request, no deploy'
 
     # No need for Maven phase "install" as the generated JAR file does not need to be installed
